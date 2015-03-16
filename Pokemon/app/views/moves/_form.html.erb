@@ -1,0 +1,13 @@
+<%= simple_form_for(@move) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :pp %>
+    <%= f.input :element, :as => :select, :collection => Move::TYPES %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

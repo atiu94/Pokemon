@@ -2,10 +2,12 @@
 
 one:
   name: MyString
-  type: 
-  description: MyText
+  element: MyString
+  description: MyString
+  sprite: MyString
 
 two:
   name: MyString
-  type: 
-  description: MyText
+  element: MyString
+  description: MyString
+  sprite: MyString

@@ -2,8 +2,9 @@ class CreateCreatures < ActiveRecord::Migration
   def change
     create_table :creatures do |t|
       t.string :name
-      t.string :type
-      t.text :description
+      t.string :element
+      t.string :description
+      t.string :sprite
 
       t.timestamps
     end

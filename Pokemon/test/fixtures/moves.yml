@@ -3,9 +3,9 @@
 one:
   name: MyString
   pp: 1
-  type: 
+  element: MyString
 
 two:
   name: MyString
   pp: 1
-  type: 
+  element: MyString

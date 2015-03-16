@@ -11,12 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150316043746) do
+ActiveRecord::Schema.define(version: 20150316051651) do
 
   create_table "creatures", force: true do |t|
     t.string   "name"
-    t.string   "type"
-    t.text     "description"
+    t.string   "element"
+    t.string   "description"
+    t.string   "sprite"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -31,7 +32,7 @@ ActiveRecord::Schema.define(version: 20150316043746) do
   create_table "moves", force: true do |t|
     t.string   "name"
     t.integer  "pp"
-    t.string   "type"
+    t.string   "element"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

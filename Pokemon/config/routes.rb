@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :moves
+
+  resources :creatures
+
   get 'pages/index'
 
   root 'pages#index'

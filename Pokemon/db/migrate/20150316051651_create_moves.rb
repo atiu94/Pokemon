@@ -3,7 +3,7 @@ class CreateMoves < ActiveRecord::Migration
     create_table :moves do |t|
       t.string :name
       t.integer :pp
-      t.string :type
+      t.string :element
 
       t.timestamps
     end
