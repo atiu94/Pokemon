@@ -13,8 +13,8 @@
   <tbody>
     <% @user_creature_moves.each do |user_creature_move| %>
       <tr>
-        <td><%= user_creature_move.user_creature_id %></td>
-        <td><%= user_creature_move.move_id %></td>
+        <td><%= user_creature_move.user_creature %></td>
+        <td><%= user_creature_move.move %></td>
         <td><%= user_creature_move.pp %></td>
         <td><%= link_to 'Show', user_creature_move %></td>
         <td><%= link_to 'Edit', edit_user_creature_move_path(user_creature_move) %></td>

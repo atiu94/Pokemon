@@ -4,5 +4,9 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  has_many :creatures
+  has_many :user_creatures
+
+  def to_s
+		self.email
+  end
 end

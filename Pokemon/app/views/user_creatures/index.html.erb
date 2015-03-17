@@ -13,8 +13,8 @@
   <tbody>
     <% @user_creatures.each do |user_creature| %>
       <tr>
-        <td><%= user_creature.user_id %></td>
-        <td><%= user_creature.creature_id %></td>
+        <td><%= user_creature.user %></td>
+        <td><%= user_creature.creature %></td>
         <td><%= user_creature.nickname %></td>
         <td><%= link_to 'Show', user_creature %></td>
         <td><%= link_to 'Edit', edit_user_creature_path(user_creature) %></td>

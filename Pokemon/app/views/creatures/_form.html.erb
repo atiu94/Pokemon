@@ -5,7 +5,7 @@
     <%= f.input :name %>
     <%= f.input :element, :as => :select, :collection => Creature::TYPES %>
     <%= f.input :description %>
-    <%= f.input :sprite %>
+    <%= f.file_field :avatar %>
   </div>
 
   <div class="form-actions">
