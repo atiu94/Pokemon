@@ -2,8 +2,10 @@
 
 one:
   name: MyString
-  gps_coordinates: MyString
+  x_coordinate: 1
+  y_coordinate: 1
 
 two:
   name: MyString
-  gps_coordinates: MyString
+  x_coordinate: 1
+  y_coordinate: 1

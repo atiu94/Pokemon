@@ -1,0 +1,13 @@
+<%= simple_form_for(@user_creature_move) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :user_creature_id %>
+    <%= f.input :move_id %>
+    <%= f.input :pp %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

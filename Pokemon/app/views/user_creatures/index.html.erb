@@ -1,0 +1,29 @@
+<h1>Listing user_creatures</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Creature</th>
+      <th>Nickname</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @user_creatures.each do |user_creature| %>
+      <tr>
+        <td><%= user_creature.user_id %></td>
+        <td><%= user_creature.creature_id %></td>
+        <td><%= user_creature.nickname %></td>
+        <td><%= link_to 'Show', user_creature %></td>
+        <td><%= link_to 'Edit', edit_user_creature_path(user_creature) %></td>
+        <td><%= link_to 'Destroy', user_creature, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User creature', new_user_creature_path %>

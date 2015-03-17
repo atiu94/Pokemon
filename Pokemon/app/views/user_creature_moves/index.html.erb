@@ -1,0 +1,29 @@
+<h1>Listing user_creature_moves</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User creature</th>
+      <th>Move</th>
+      <th>Pp</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @user_creature_moves.each do |user_creature_move| %>
+      <tr>
+        <td><%= user_creature_move.user_creature_id %></td>
+        <td><%= user_creature_move.move_id %></td>
+        <td><%= user_creature_move.pp %></td>
+        <td><%= link_to 'Show', user_creature_move %></td>
+        <td><%= link_to 'Edit', edit_user_creature_move_path(user_creature_move) %></td>
+        <td><%= link_to 'Destroy', user_creature_move, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User creature move', new_user_creature_move_path %>

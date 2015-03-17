@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @user_creature.user_id %>
+</p>
+
+<p>
+  <strong>Creature:</strong>
+  <%= @user_creature.creature_id %>
+</p>
+
+<p>
+  <strong>Nickname:</strong>
+  <%= @user_creature.nickname %>
+</p>
+
+<%= link_to 'Edit', edit_user_creature_path(@user_creature) %> |
+<%= link_to 'Back', user_creatures_path %>

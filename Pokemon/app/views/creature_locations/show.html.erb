@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @creature_location.location_id %>
+</p>
+
+<p>
+  <strong>Creature:</strong>
+  <%= @creature_location.creature_id %>
+</p>
+
+<%= link_to 'Edit', edit_creature_location_path(@creature_location) %> |
+<%= link_to 'Back', creature_locations_path %>
