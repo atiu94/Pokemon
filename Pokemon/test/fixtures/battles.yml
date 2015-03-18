@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  creature_location_id: 1
+  user_creature_id: 1
+  user_creature_current_health_point: 1
+  creature_current_health_point: 1
+
+two:
+  creature_location_id: 1
+  user_creature_id: 1
+  user_creature_current_health_point: 1
+  creature_current_health_point: 1

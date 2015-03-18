@@ -1,0 +1,14 @@
+<%= simple_form_for(@battle) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :creature_location %>
+    <%= f.association :user_creature %>
+    <%= f.input :user_creature_current_health_point %>
+    <%= f.input :creature_current_health_point %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

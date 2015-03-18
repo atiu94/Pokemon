@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :battles
+
   resources :creature_locations
 
   resources :locations

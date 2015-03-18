@@ -11,7 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150317094254) do
+ActiveRecord::Schema.define(version: 20150318024351) do
+
+  create_table "battles", force: true do |t|
+    t.integer  "creature_location_id"
+    t.integer  "user_creature_id"
+    t.integer  "user_creature_current_health_point"
+    t.integer  "creature_current_health_point"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "creature_locations", force: true do |t|
     t.integer  "location_id"
@@ -27,6 +36,7 @@ ActiveRecord::Schema.define(version: 20150317094254) do
     t.string   "sprite"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "health_point"
   end
 
   create_table "locations", force: true do |t|

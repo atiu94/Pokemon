@@ -2,8 +2,8 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :location_id %>
-    <%= f.input :creature_id %>
+    <%= f.association :location %>
+    <%= f.association :creature %>
   </div>
 
   <div class="form-actions">
